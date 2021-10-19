@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* a{ 
+    text-decoration: none;
+}
+/* Estilo da parte superior*/
+header {
+
+    width: 100%;
+    height: 88px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+header .menu-icon{
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+header .brand a{
+    color: crimson;
+    font-size: 35px;
+    font-weight: bold;
+}
+header .navbar{
+    display: flex;
+}
+
+header .navbar a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 20px;
+    line-height: 80px;
+}
+header .navbar a:hover{
+    background-color: crimson;
+}
+@media screen and (max-width: 768px) {
+    header .menu-icon{
+        display: block;
+    }
+
+    header .navbar{
+        width: 100%;
+        height: cal(100vh -80px);
+        background-color: #333;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 200ms ease-out;
+    }
+    header .navbar.active{
+        left: 0;
+    }
+}
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../Projeto\ Automação\ Xaroparia/Xarope3.jpg);
+    
+}
+body .CalcAcidez{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgba(0, 0,0, 0.8);
+    position: absolute;
+    top: 15%;
+    left:1% ;
+    padding: 40px;
+    border-radius: 10%;
+    color: White;
+}
+.CalcAcidez input{
+    padding: 10px;
+    color:black;
+    line-height: 1;
+}
+.CalcAcidez input:hover,
+.CalcAcidez input:focus,
+.CalcAcidez textarea:hover,
+.CalcAcidez textarea:focus {
+    outline: none;
+    border-color:crimson;
+    box-shadow: 0 0 0 1px crimson;
+}
+.CalcAcidez button{
+    display: block;
+    padding: 9px;
+    background: crimson;
+    color: white;
+    font:inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.CalcAcidez button:hover{
+ background: blueviolet;
+}
