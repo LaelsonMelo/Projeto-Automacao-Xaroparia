@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity=
+    "sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <Link href="style.css"rel="stylesheet">
+        <link rel="stylesheet" href="print-relatoriomaterial.css">
+    <title>Xaroparia</title>
+</head>
+
+<body>
+
+        <!--Menu-->
+        <header>
+            
+            <div class="MateriaPrim no-print">
+                <a href="# no-print">Pedido de Materia Prima</a>
+            </div>
+            <nav class="navbar no-print">
+                <a href="index.html ">Home</a>
+                <a href="Xaroparia.html ">Calculos Rápidos</a>
+                <a href="Contato.html ">Contato</a>
+            </nav>
+            <!--icone barra-->
+            <div class="menu-icon no-print">
+                <i class="fas fa-bars no-print"></i>
+            </div>
+          
+        </header>
+      <main>
+          <div class="title">
+              <h2> Pedido de Material</h2>
+              <span>Formulario de produtos.</span>
+          </div>
+          <div class="card no-print">
+              <div class="lineInput">
+                  <label>Produto</label>
+                  <input type="text" id="produto">
+              </div>
+
+              <div class="lineInput">
+                  <label>Quantidade</label>
+                  <input type="number" id="quantidade">
+              </div>
+              <button onclick="produto.salvar()"id="bnt1">Salvar</button>
+              <button onclick="produto.cancelar()">Cancelar</button>
+          </div>
+
+          <div class="content">
+              <table border="1">
+                  <thead>
+                      <th class="center">ID</th>
+                      <th>Produto</th>
+                      <th>Quantidade</th>
+                      <th class="center">Ações</th>
+                  </thead>
+                  <tbody id="tbody">
+                      
+                  </tbody>
+              </table>
+              <div class="botaorelatorio no-print">
+              <button onclick="window.print()">Gerar Relatorio</button></br>
+              </div>
+          </div>
+      </main>
+
+      
+                
+              
+            
+
+
+        <Script src ="./script.js"></Script>
+
+    
+</body>
+</html>
+
+
+

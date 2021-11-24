@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--Padrão-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="Contato.css">
+</head>
+<body>
+    <header>
+    <!--Cabeçalho do Formulario-->
+    <h1>Formulário de Contato</h1>
+    <form action="https://formsubmit.co/laelson.jfm@gmail.com" method="POST">
+        <div class="form">
+
+<!--Comandos para envio de mensagem-->
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" required>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required>
+        <input type="hidden" name="_captcha" value="false"/>
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" placeholder="Escreva algo"></textarea>
+        <input type="hidden" name="_next" value="Contato.html"/>
+        <button type="submit">ENVIAR</button> 
+        <div class="BotãoVoltar">
+        <style>
+            input[type=button] {
+  background-color: crimson;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+        </style>    
+        <input type="button" value="VOLTAR" onClick="history.go(-1)"> 
+    </div>
+    <div class="menu-icon-home">
+        <i class="fas fa-bars"></i>
+    </div>
+</header>
+   </form>
+
+   <Script src ="./script.js"></Script>
+</body>
+</html>
